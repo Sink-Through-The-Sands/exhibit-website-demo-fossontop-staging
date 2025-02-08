@@ -34,7 +34,14 @@ const vitePressOptions = {
       { icon: 'github', link: 'https://github.com/FOSSonTop' }
     ],
     cleanUrls: true,
-    lastUpdated: true
+    lastUpdated: true,
+    editLink: {
+      pattern: ({ filePath }) => {
+        const repo = filePath.split("/")[0]
+	const rest = filePath.split("/").slice(1).join("/")
+        return `https://github.dev/FOSSonTop/${repo}/blob/master/${rest}`
+      }
+    }
   }
 }
 
