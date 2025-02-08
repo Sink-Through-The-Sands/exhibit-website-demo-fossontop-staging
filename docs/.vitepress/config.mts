@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
 function genSidebarConfig(doc: string){
@@ -39,4 +40,7 @@ const vitePressOptions = {
   }
 }
 
-export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))
+const config = defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))
+const configWithMermaid = withMermaid(config)
+
+export default configWithMermaid
