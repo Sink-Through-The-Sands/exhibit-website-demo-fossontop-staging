@@ -13,8 +13,6 @@ function genSidebarConfig(doc: string){
     capitalizeEachWords: true,
     underscoreToSpace: true,
     includeEmptyFolder: false,
-    includeRootIndexFile: true,
-    includeFolderIndexFile: true,
     sortMenusByName: false,
     excludePattern: ['README**']
   }
