@@ -41,6 +41,16 @@ const vitePressOptions = {
 	const rest = filePath.split("/").slice(1).join("/")
         return `https://github.dev/FOSSonTop/${repo}/blob/master/${rest}`
       }
+    },
+    search: {
+      provider: 'local',
+      options: {
+        miniSearch: {
+          searchOptions: {
+            fuzzy: 0.3
+          }
+        }
+      }
     }
   }
 }
