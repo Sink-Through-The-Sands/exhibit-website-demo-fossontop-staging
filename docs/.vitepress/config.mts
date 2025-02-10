@@ -14,7 +14,8 @@ function genSidebarConfig(doc: string){
     underscoreToSpace: true,
     includeEmptyFolder: false,
     sortMenusByName: false,
-    excludePattern: ['README**']
+    excludePattern: ['README**'],
+    sortMenusByFrontmatterOrder: true
   }
 };
 
