@@ -15,7 +15,9 @@ function genSidebarConfig(doc: string){
     includeEmptyFolder: false,
     sortMenusByName: false,
     excludePattern: ['README**'],
-    sortMenusByFrontmatterOrder: true
+    sortMenusByFrontmatterOrder: true,
+    includeFolderIndexFile: true,
+    useTitleFromFrontmatter: true
   }
 };
 
