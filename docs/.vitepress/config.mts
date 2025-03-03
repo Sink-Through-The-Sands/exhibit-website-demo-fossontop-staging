@@ -31,7 +31,7 @@ const vitePressOptions = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'AOSP Docs', link: '/aosp/' },
-      { text: 'Crave.io Docs', link: '/crave/' }
+      { text: 'Crave.io Docs', link: '/crave/' },
       { text: 'Game Development Guides', link: '/gamedev/' }
     ],
     socialLinks: [
